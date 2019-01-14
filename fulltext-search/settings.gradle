@@ -1,2 +1,3 @@
 rootProject.name = 'fulltext-search'
+include 'lucene'
 

@@ -16,16 +16,31 @@ dependencies {
 }
 ext {
     junitVersion = "4.12"
-    rocketMqVersion = "4.3.2"
-    rabbitMqVersion = "5.5.2"
+    // lucene
+    luceneVersion = "7.6.0" // lucene core
+    // solr
+    solrVersion = "7.6.0"
+    elasticSearchVersion = "7.0.0-alpha2"
     vc = [
             junit   : "junit:junit:$junitVersion",
-            rocketmq: "org.apache.rocketmq:rocketmq-client:$rocketMqVersion",
+            // https://mvnrepository.com/artifact/org.apache.lucene/lucene-core
+//            compile group: 'org.apache.lucene', name: 'lucene-core', version: '7.6.0'
+            luceneCore: "org.apache.lucene:lucene-core:$luceneVersion",
+            // https://mvnrepository.com/artifact/org.apache.lucene/lucene-queryparser
+//            compile group: 'org.apache.lucene', name: 'lucene-queryparser', version: '7.6.0'
+            luceneQueryParser: "org.apache.lucene:lucene-queryparser:$luceneVersion",
+            // https://mvnrepository.com/artifact/org.apache.lucene/lucene-analyzers-common
+//            compile group: 'org.apache.lucene', name: 'lucene-analyzers-common', version: '7.6.0'
+            luceneAnalyzersCommon: "org.apache.lucene:lucene-analyzers-common:$luceneVersion",
+            // https://mvnrepository.com/artifact/org.apache.solr/solr-core
+//            compile group: 'org.apache.solr', name: 'solr-core', version: '7.6.0'
+            solr: "org.apache.solr:solr-core:$solrVersion",
 
-            // https://mvnrepository.com/artifact/com.rabbitmq/amqp-client
-//            compile group: 'com.rabbitmq', name: 'amqp-client', version: '5.5.2'
+            // https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch
+//            compile group: 'org.elasticsearch', name: 'elasticsearch', version: '7.0.0-alpha2'
 
-            rabbitmq: "com.rabbitmq:amqp-client:$rabbitMqVersion"
+            elasticSearch: "org.elasticsearch:elasticsearch:7.0.0-alpha2"
+
     ]
 }
 
@@ -72,5 +87,5 @@ configure(subprojects) {
  * 配置根项目
  */
 configure(rootProject) {
-    description = "mq accumulation"
+    description = "full-text search accumulation"
 }
