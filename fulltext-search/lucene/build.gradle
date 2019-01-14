@@ -1,0 +1,6 @@
+dependencies {
+    compile vc.luceneCore
+    compile vc.luceneQueryParser
+    compile vc.luceneAnalyzersCommon
+}
+
