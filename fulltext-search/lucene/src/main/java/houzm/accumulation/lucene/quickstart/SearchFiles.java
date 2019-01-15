@@ -1,4 +1,4 @@
-package houzm.accumulation.lucene.api;
+package houzm.accumulation.lucene.quickstart;
 
 /**
  * author: hzm_dream@163.com

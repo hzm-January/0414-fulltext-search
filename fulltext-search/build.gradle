@@ -16,30 +16,35 @@ dependencies {
 }
 ext {
     junitVersion = "4.12"
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+//    provided group: 'org.projectlombok', name: 'lombok', version: '1.18.4'
+
+    lombokVersion = "1.18.4"
     // lucene
     luceneVersion = "7.6.0" // lucene core
     // solr
     solrVersion = "7.6.0"
     elasticSearchVersion = "7.0.0-alpha2"
     vc = [
-            junit   : "junit:junit:$junitVersion",
+            junit                : "junit:junit:$junitVersion",
+            lombok               : "org.projectlombok:lombok:$lombokVersion",
             // https://mvnrepository.com/artifact/org.apache.lucene/lucene-core
 //            compile group: 'org.apache.lucene', name: 'lucene-core', version: '7.6.0'
-            luceneCore: "org.apache.lucene:lucene-core:$luceneVersion",
+            luceneCore           : "org.apache.lucene:lucene-core:$luceneVersion",
             // https://mvnrepository.com/artifact/org.apache.lucene/lucene-queryparser
 //            compile group: 'org.apache.lucene', name: 'lucene-queryparser', version: '7.6.0'
-            luceneQueryParser: "org.apache.lucene:lucene-queryparser:$luceneVersion",
+            luceneQueryParser    : "org.apache.lucene:lucene-queryparser:$luceneVersion",
             // https://mvnrepository.com/artifact/org.apache.lucene/lucene-analyzers-common
 //            compile group: 'org.apache.lucene', name: 'lucene-analyzers-common', version: '7.6.0'
             luceneAnalyzersCommon: "org.apache.lucene:lucene-analyzers-common:$luceneVersion",
             // https://mvnrepository.com/artifact/org.apache.solr/solr-core
 //            compile group: 'org.apache.solr', name: 'solr-core', version: '7.6.0'
-            solr: "org.apache.solr:solr-core:$solrVersion",
+            solr                 : "org.apache.solr:solr-core:$solrVersion",
 
             // https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch
 //            compile group: 'org.elasticsearch', name: 'elasticsearch', version: '7.0.0-alpha2'
 
-            elasticSearch: "org.elasticsearch:elasticsearch:7.0.0-alpha2"
+            elasticSearch        : "org.elasticsearch:elasticsearch:7.0.0-alpha2"
 
     ]
 }

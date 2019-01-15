@@ -1,4 +1,4 @@
-package houzm.accumulation.lucene.api;
+package houzm.accumulation.lucene.quickstart;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -38,7 +38,7 @@ public class IndexFiles {
      * Index all text files under a directory.
      */
     public static void main(String[] args) {
-        String usage = "java org.apache.lucene.demo.IndexFiles"
+        String usage = "java org.apache.lucene.demo.LuceneDemo"
                 + " [-index INDEX_PATH] [-docs DOCS_PATH] [-update]\n\n"
                 + "This indexes the documents in DOCS_PATH, creating a Lucene index"
                 + "in INDEX_PATH that can be searched with SearchFiles";
