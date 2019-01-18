@@ -18,5 +18,13 @@ IndexReader IndexWriter
 ## 加权
 创建索引之前加权  
 搜索的时候加权  
-OrderDetailUtil
+## 搜索
+## Filed类型
+### String
+### int
+## lukeall
+下载地址：[https://github.com/DmitryKey/luke/releases](https://github.com/DmitryKey/luke/releases) 
+
+
+
 

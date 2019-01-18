@@ -1,9 +1,7 @@
-package houzm.accumulation.lucene.helloworld;
+package houzm.accumulation.lucene.data;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-
-import com.sun.istack.internal.NotNull;
 
 /**
  * author: hzm_dream@163.com
@@ -16,5 +14,6 @@ public class User {
     private String id;
     private String name;
     private String addr;
-    private String phone;
+    private Long phone;
+    private String descript;
 }
