@@ -18,6 +18,7 @@ IndexReader IndexWriter
 ## 加权
 创建索引之前加权  
 搜索的时候加权  
+setBoost废除后，有两种方式加权重：BoostsQuery 和语法查询时多默认域的扩展
 ## 搜索
 ## Filed类型
 ### String
